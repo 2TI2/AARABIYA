@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>التوثيق الاجتماعي</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            direction: rtl;
+            margin: 0; 
+        }
+        h1, p, h2 {
+            text-align: center;
+        }
+        .con {
+            height: 600px;
+            width: 650px;
+            padding: 50px;
+            align-self: flex-start; 
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cnt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        .b{
+            padding: 10px 20px;
+        }
+        .b {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+        }
+
+        .b:disabled {
+            pointer-events: none;
+        }
+
+        .b:hover {
+            color: #fff;
+            background-color: gray;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .b:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <button id="b" class="b" role="b">رجوع</button>
+    <div class="container">
+        <div class="con">
+            <h1>التوثيق الاجتماعي</h1>
+            <div class="cnt">
+                <p>التوثيق الاجتماعي هو عملية تسجيل وتوثيق الأحداث والظروف الاجتماعية التي تؤثر في حياة الناس وتشكل جزءًا من تاريخهم وثقافتهم. وتعتبر الصورة واحدة من أقوى وسائل التوثيق البصرية التي تستخدم لنقل القصص والمشاهد والمواقف التي يمكن أن تؤثر على الحياة اليومية للأفراد والمجتمعات.</p>
+                <p>عندما يتم توثيق الأحداث الاجتماعية بواسطة الصور، يتمكن المشاهدون من الحصول على نظرة فورية وملموسة عن الأحداث والتحولات التي تحدث في المجتمعات. فالصورة تتيح رؤية الواقع من منظور مختلف، وتعزز فهمنا للتحديات والمشكلات التي قد تواجهها المجتمعات.</p>
+                <p>بفضل تأثيرها القوي، يمكن للصورة أن تلقي الضوء على قضايا اجتماعية مهمة مثل الفقر، والعدالة الاجتماعية، وحقوق الإنسان، والتغيرات البيئية، والهجرة، والحروب، والكوارث الطبيعية، والعديد من القضايا الأخرى التي تشكل تحديًا للمجتمعات.</p>
+                <p>علاوة على ذلك، تعتبر الصورة أداة فعّالة لرفع الوعي بشأن قضايا اجتماعية محددة، حيث يمكن للصورة أن تحرك المشاعر وتثير الانتباه لقضايا ذات أهمية كبيرة. فمن خلال رؤية الصور، يمكن للناس التعاطف مع الآخرين والتفاعل مع قصصهم والمساهمة في جهود التغيير الاجتماعي.</p>
+                <p>باختصار، الصورة تعتبر وسيلة فعّالة لتوثيق الأحداث الاجتماعية ورفع الوعي بالقضايا الاجتماعية، وهي تلعب دوراً هاماً في تشكيل وتوجيه التغيير الاجتماعي.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+            const b = document.getElementById("b");
+            b.addEventListener("click",function(){
+                window.location.href = "page1.html" ;
+            })
+    </script>
+</body>
+</html>

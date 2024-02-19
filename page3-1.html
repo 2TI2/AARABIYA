@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>تضليل الرأي العام</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            direction: rtl;
+            margin: 0; 
+        }
+        h1, p, h2 {
+            text-align: center;
+        }
+        .con {
+            height: 600px;
+            width: 650px;
+            padding: 50px;
+            align-self: flex-start; 
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cnt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        .b{
+            padding: 10px 20px;
+        }
+        .b {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+        }
+
+        .b:disabled {
+            pointer-events: none;
+        }
+
+        .b:hover {
+            color: #fff;
+            background-color: gray;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .b:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <button id="b" class="b" role="b">رجوع</button>
+    <div class="container">
+        <div class="con">
+            <h1>تضليل الرأي العام</h1>
+            <div class="cnt">
+                <p>تضليل الرأي العام باستخدام الصور يشكل ظاهرة خطيرة تؤثر على الثقة العامة وتشوه الحقائق والوقائع. يمكن استخدام الصور لتضليل الرأي العام عبر تزييف المعلومات أو تعديل الصور بطرق تغيير المعاني الأصلية، وهذا يؤدي إلى نشر معلومات غير صحيحة أو خاطئة.</p>
+                <p>عمليات تضليل الرأي العام بواسطة الصور قد تشمل تلاعبًا بالصور لتغيير المشهد الأصلي، أو إضافة عناصر وتعليقات منسوبة بشكل غير صحيح إلى الصور، مما يخلق انطباعات مغلوطة ويوجه الرأي العام نحو اتجاه معين.</p>
+                <p>هذا النوع من التضليل يمكن أن يستخدم لأغراض سياسية أو تجارية أو حتى شخصية، حيث يهدف إلى تشويه صورة شخص ما أو منظمة أو تشويه الحقائق لصالح أجندة معينة.</p>
+                <p>التصدي لتضليل الرأي العام بالصور يتطلب التوعية والحذر، حيث يجب على المستهلكين أن يكونوا حذرين ويقوموا بالتحقق من مصداقية المعلومات والصور التي يتم تداولها قبل اعتمادها كمصادر موثوقة.</p>
+                <p>الحكومات والمنظمات الإعلامية والشركات الاجتماعية يجب أن تعمل على تعزيز الوعي بأهمية التحقق من صحة المعلومات والصور ومحاربة التضليل الإعلامي.</p>
+                <p>بالإضافة إلى ذلك، يجب تشديد القوانين وتطبيقها بشكل صارم على أولئك الذين يقومون بترويج الأخبار المزيفة أو تعديل الصور بطريقة مغلوطة، لضمان سلامة الرأي العام ونزاهة الإعلام.</p>
+                <p>في النهاية، فإن التضليل الإعلامي بواسطة الصور يمثل تهديدًا خطيرًا على الديمقراطية والحريات العامة، ويتطلب جهود مشتركة لمكافحته وتقديم الحماية للمجتمع من تأثيره الضار.</p>
+                <video controls src="ar3.mp4"></video>
+            </div>
+        </div>
+    </div>
+    <script>
+            const b = document.getElementById("b");
+            b.addEventListener("click",function(){
+                window.location.href = "page1.html" ;
+            })
+    </script>
+</body>
+</html>

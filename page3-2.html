@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>تشويه الصورة الشخصية</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            direction: rtl;
+            margin: 0; 
+        }
+        h1, p, h2 {
+            text-align: center;
+        }
+        .con {
+            height: 600px;
+            width: 650px;
+            padding: 50px;
+            align-self: flex-start; 
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cnt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        .b{
+            padding: 10px 20px;
+        }
+        .b {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+        }
+
+        .b:disabled {
+            pointer-events: none;
+        }
+
+        .b:hover {
+            color: #fff;
+            background-color: gray;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .b:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <button id="b" class="b" role="b">رجوع</button>
+    <div class="container">
+        <div class="con">
+            <h1>تشويه الصورة الشخصية</h1>
+            <div class="cnt">
+                <p>تشويه الصورة الشخصية عبر نشر صور مخدّرة أو محرجة بطرق غير مشروعة يمثل انتهاكًا لخصوصية الأفراد ويؤثر سلبًا على حياتهم الشخصية والمهنية. يمكن لهذا النوع من التشويه أن يسبب ضررًا نفسيًا واجتماعيًا للأفراد ويؤثر على سمعتهم بشكل كبير.</p>
+                <p>عمليات تشويه الصورة الشخصية غالبًا ما تتم عبر الإنترنت، حيث يتم نشر الصور بطريقة غير مشروعة أو مخدرة دون موافقة صاحبها، مما يؤدي إلى انتهاك خصوصيته وإحداث أضرار لا يمكن استردادها.</p>
+                <p>تشويه الصورة الشخصية يمكن أن يؤدي إلى تأثيرات سلبية كبيرة على حياة الفرد، بما في ذلك فقدان فرص عمل، وتأثيرات نفسية وعاطفية مدمرة، وتشويه العلاقات الشخصية والاجتماعية.</p>
+                <p>من المهم أن تتخذ الحكومات والمؤسسات التشريعات والسياسات اللازمة لحماية خصوصية الأفراد ومكافحة التشويه الصوري الغير قانوني.</p>
+                <p>كما يتعين على المجتمع بأسره أن يعمل على تعزيز الوعي بأهمية احترام خصوصية الأفراد وعدم السماح بنشر الصور بطرق غير قانونية أو غير أخلاقية.</p>
+                <p>التشويه الصوري يعتبر جريمة تتطلب عقوبات قانونية صارمة للمتسببين بها، ويجب على الأفراد أيضًا أن يكونوا حذرين ويتخذوا إجراءات لحماية صورهم الشخصية وخصوصيتهم عبر الإنترنت.</p>
+                <p>في النهاية، يجب أن نعمل جميعًا سويًا على تشجيع ثقافة الاحترام والمسؤولية عند استخدام الصور والحفاظ على سلامة وخصوصية الأفراد في العالم الرقمي والواقعي.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+            const b = document.getElementById("b");
+            b.addEventListener("click",function(){
+                window.location.href = "page1.html" ;
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>عالم الصورة</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            direction: rtl;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        .con {
+            height: 600px;
+            width: 650px;
+            padding: 50px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0%;
+        }
+
+        .cnt {
+            display: flex;
+        }
+
+        .cr, .cl {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+
+        .cr h1,
+        .cl h1,
+        .cr h2,
+        .cl h2 {
+            margin: 10px 0; 
+        }
+        .b{
+            padding: 10px 20px;
+        }
+        .b {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+        }
+
+        .b:disabled {
+            pointer-events: none;
+        }
+
+        .b:hover {
+            color: #fff;
+            background-color: gray;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .b:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+        .bc{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="b" class="b" role="b">رجوع</button>
+    <div class="container">
+        <div class="con">
+            <h1>عالم الصورة</h1>
+            <p>عالم الصورة يمثّل عالمًا شاسعًا يتغلغل في أعماق الثقافة والفن والتكنولوجيا، حيث تتلاقى فيه الأفكار والمشاعر والتجارب بشكل مترابط. يعتبر الصورة لغة مؤثرة تتفاعل مع عقولنا بقوة، فهي ليست مجرد لقطة ميدانية بل هي رسالة تحمل في طياتها الكثير من المعاني والمفردات المتعددة. ومن خلال تطور التكنولوجيا، أصبح بإمكاننا توليد وتبادل الصور بسهولة، مما جعل الصورة لغة عالمية تتخطى حواجز اللغة المنطوقة. تنوعت استخدامات الصورة منذ اختراع التصوير الفوتوغرافي وحتى اليوم، حيث أصبحت لها دور مهم في مجالات مختلفة مثل الإعلان والتوثيق والفنون التشكيلية والسينما وغيرها، مما يبرز دورها البارز في تشكيل وجهات النظر ونقل الرسائل بشكل فعّال. في هذا العالم المتغير باستمرار، تظل الصورة تعكس رؤى وتجارب الفرد والمجتمع، وتمتاز بقدرتها على إثارة الاهتمام والتأمل، مما يجعلها جزءًا حيويًا من تجاربنا اليومية وثقافتنا العامة.</p>
+            <div class="cnt">
+                <div class="cr">
+                    <h1>إجبيات الصورة</h1>
+                    <h2>التوثيق الاجتماعي: </h2><button id="b1" class="b" role="b">المزيد</button>
+                    <h2>الفن التشكيلي: </h2><button id="b2" class="b" role="b">المزيد</button>
+                    <h2>التواصل الثقافي: </h2><button id="b3" class="b" role="b">المزيد</button>
+                </div>
+                <div class="cl">
+                    <h1>سلبيات الصورة</h1>
+                    <h2>تضليل الرأي العام: </h2><button id="b11" class="b" role="b">المزيد</button>
+                    <h2>تشويه الصورة الشخصية: </h2><button id="b22" class="b" role="b">المزيد</button>
+                    <h2>استخدام الصور في الحروب النفسية:</h2><button id="b33" class="b" role="b">المزيد</button>
+                </div>
+            </div>
+            <div class="bc">
+                <h2>الذكاء  الإصطناعي </h2><button id="bc" class="b" role="b">المزيد</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const b1 = document.getElementById("b1");
+        b1.addEventListener("click",function(){
+            window.location.href = "page2-1.html" ;
+        })
+        const b2 = document.getElementById("b2");
+        b2.addEventListener("click",function(){
+            window.location.href = "page2-2.html" ;
+        })
+        const b3 = document.getElementById("b3");
+        b3.addEventListener("click",function(){
+            window.location.href = "page2-3.html" ;
+        })   
+        const b11 = document.getElementById("b11");
+        b11.addEventListener("click",function(){
+            window.location.href = "page3-1.html" ;
+        })
+        const b22 = document.getElementById("b22");
+        b22.addEventListener("click",function(){
+            window.location.href = "page3-2.html" ;
+        })
+        const b33 = document.getElementById("b33");
+        b33.addEventListener("click",function(){
+            window.location.href = "page3-3.html" ;
+        })
+        const b = document.getElementById("b");
+        b.addEventListener("click",function(){
+            window.location.href = "index.html" ;
+        })
+        const bc = document.getElementById("bc");
+        bc.addEventListener("click",function(){
+            window.location.href = "pagebc.html" ;
+        })
+    </script>
+</body>
+</html>
